@@ -27,4 +27,26 @@ body{
 #transaction-area{
 	display: none;
 }
+.deposit{
+	background-color: #6a5acd;
+}
+.Withdraw{
+	background-color: #ffa07a;
+}
+.Balance{
+	background-color: #ffa500;
+}
+.common-design {
+	margin: 30% 10px 0 10px;
+	color: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+}
+.amount-input-design {
+	padding: 10% 8%;
+	box-shadow: 4px 5px 9px gray;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-top: 8%;
+}
 /* transaction part end */

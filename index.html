@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- custom css end -->
 </head>
+
 <body>
     <!-- login part start -->
     <div id="login-area">
@@ -23,14 +25,58 @@
             <h4>Login</h4>
             <input type="text" class="form-control mb-4" placeholder="Enter email">
             <input type="password" class="form-control mb-4" placeholder="password">
-            <button type="submit" id="login"class="btn btn-success">Enter</button>
+            <button type="submit" id="login" class="btn btn-success">Enter</button>
         </div>
         <!-- submit part end -->
     </div>
     <!-- login part end -->
     <!-- transaction part start -->
     <div id="transaction-area">
-        <h2 class="text-center">transaction</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        <div class="container">
+            <!-- upper transaction part start -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit common-design">
+                        <h5>Deposit</h5>
+                        <h2>$<span id="currentDeposit">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Withdraw common-design">
+                        <h5>Withdraw</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Balance common-design">
+                        <h5>Balance</h5>
+                        <h2>$ <span id="currentBalance">1000</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- upper transaction part end -->
+            <!-- lower transaction part start -->
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- for right part -->
+                    <div class="amount-input-design">
+                        <h4>Deposit</h4>
+                        <input id="depositAmount" type="text" class="form-control mb-4"
+                            placeholder="$amount you want to deposit">
+                        <button type="submit" class="btn btn-success" id="deposit-button">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- for left part -->
+                    <div class="amount-input-design">
+                        <h4>Withdraw</h4>
+                        <input type="text" class="form-control mb-4" placeholder="$amount you want to withdraw">
+                        <button type="submit" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+            <!-- lower transaction part end -->
+        </div>
     </div>
     <!-- transaction part end -->
 
@@ -39,7 +85,8 @@
 
 
 
- <!-- for js file -->
-<script src="js/script.js"></script>
+    <!-- for js file -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
