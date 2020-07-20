@@ -1,4 +1,30 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
+#login-area h2 {
+	text-transform: capitalize;
+	margin: 10% 0 50px 0;
+	font-size: 40px;
+}
+.custom-heading{
+    font-weight: bold;
+    color: #fa8072;
+}
+#submit-area {
+	padding: 4% 5%;
+	box-shadow: 4px 5px 9px gray;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+#submit-area h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+/* transaction part start */
+#transaction-area{
+	display: none;
+}
+/* transaction part end */
