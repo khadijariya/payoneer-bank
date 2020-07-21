@@ -44,13 +44,13 @@
                 <div class="col-md-4">
                     <div class="Withdraw common-design">
                         <h5>Withdraw</h5>
-                        <h2>$00</h2>
+                        <h2>$<span id="currentWithdraw">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="Balance common-design">
                         <h5>Balance</h5>
-                        <h2>$ <span id="currentBalance">1000</span></h2>
+                        <h2>$<span id="currentBalance">00</span></h2>
                     </div>
                 </div>
             </div>
@@ -70,8 +70,9 @@
                     <!-- for left part -->
                     <div class="amount-input-design">
                         <h4>Withdraw</h4>
-                        <input type="text" class="form-control mb-4" placeholder="$amount you want to withdraw">
-                        <button type="submit" class="btn btn-success">Withdraw</button>
+                        <input id="withdrawAmount" type="text" class="form-control mb-4"
+                            placeholder="$amount you want to withdraw">
+                        <button type="submit" class="btn btn-success" id="withdraw-button">Withdraw</button>
                     </div>
                 </div>
             </div>
